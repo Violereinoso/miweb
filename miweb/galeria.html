@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="scrollmenu">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="sobremi.html">Sobre mi</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </header>
+    <div id="contenedor4">
+        <main>
+
+            <h1 id="titulogaleria">
+                Galería
+            </h1>
+            <h2>
+                Obras puntillistas
+            </h2>
+
+            <section id="galeria">
+
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p2.jpg" alt="mandala puntillista">
+                </article>
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p11.jpg" alt="mandala puntillista">
+                </article>
+                <article class="imagenesgaleria"> <img class="puntillismo" src="img/p3.jpg" alt="mandala puntillista">
+                </article>
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p4.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p5.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p6.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p7.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"> <img class="puntillismo" src="img/p1.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p9.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p10.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p8.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p12.jpg" alt="mandala puntillista">
+                </article>
+
+                <article class="imagenesgaleria"><img class="puntillismo" src="img/p13.jpg" alt="mandala puntillista">
+                </article>
+
+            </section>
+            <h2 id="sub"> Obras al óleo</h2>
+
+
+            <div id="contenedorgaleriaoleo">
+
+                <div class="row">
+                    <div class="column">
+                        <img class="oleo"  src="img/t5.jpg" alt="pintura al oleo de una torta" style="height:200px"
+                            onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img class="oleo" src="img/a1.jpg" alt="pintura al oleo de un arbol" style="height:200px"
+                            onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img class="oleo"  src="img/f1.jpg" alt="dibujo de una flor" style="height:200px" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img class="oleo"  src="img/f3.jpg" alt="pintura al oleo de una flor" style="height:200px"
+                            onclick="myFunction(this);">
+                    </div>
+                </div>
+
+                <div class="container3">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="height:500px">
+                </div>
+
+                <script>
+                    function myFunction(imgs) {
+                      var expandImg = document.getElementById("expandedImg");
+                      expandImg.src = imgs.src;
+                      expandImg.parentElement.style.display = "flex";
+                    }
+                    </script>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <a id="volver" href="index.html">Volver al inicio</a>
+    </footer>
+</body>
+
+</html>
